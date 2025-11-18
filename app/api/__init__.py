@@ -1,7 +1,7 @@
 from flask_restful import Api
-from user import *
-from google_login import *
-from music import *
+from app.api.user import *
+from app.api.google_login import *
+from app.api.music import *
 
 api = Api()
 

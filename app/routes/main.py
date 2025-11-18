@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import session, Blueprint, render_template
 
 
 main_bp = Blueprint("main_bp", __name__)
@@ -6,4 +6,4 @@ main_bp = Blueprint("main_bp", __name__)
 
 @main_bp.route("/")
 def home():
-    return "<h1> Flask API</h1>"
+    return render_template("index.html")

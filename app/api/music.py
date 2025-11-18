@@ -3,7 +3,6 @@ from flask import jsonify
 from app.models.user import UserModel
 from app.models.music import Song, Playlist, PlaylistSong, ListeningHistory
 from datetime import datetime
-from app.api import api
 from app.models import db
 
 
